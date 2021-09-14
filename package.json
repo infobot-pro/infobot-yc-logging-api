@@ -1,0 +1,17 @@
+{
+  "name": "infobot-yandexcloud-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.0",
+    "grpc": "^1.23.1",
+    "@grpc/proto-loader": "^0.5.1"
+  }
+}
