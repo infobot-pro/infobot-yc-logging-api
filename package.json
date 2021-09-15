@@ -1,7 +1,7 @@
 {
   "name": "infobot-yc-logging",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library for integration with Yandex Cloud Logging",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/infobot-pro/infobot-yc-logging.git"
   },
-  "author": "Aleksey Kudakov <cto@infobot.pro>",
+  "author": {
+    "name": "INFOBOT LLC"
+  },
+  "bugs": {
+    "url": "https://github.com/infobot-pro/infobot-yc-logging/issues"
+  },
+  "contributors": [
+    {
+      "name": "Aleksey Kudakov",
+      "email": "cto@infobot.pro"
+    }
+  ],
   "license": "Apache-2.0",
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
