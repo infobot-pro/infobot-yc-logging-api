@@ -1,13 +1,17 @@
 {
-  "name": "infobot-yandexcloud-logger",
+  "name": "infobot-yc-logging",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infobot-pro/infobot-yc-logging.git"
+  },
+  "author": "Aleksey Kudakov <cto@infobot.pro>",
+  "license": "Apache-2.0",
   "dependencies": {
     "jsonwebtoken": "^8.5.1",
     "request": "^2.88.0",
