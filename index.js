@@ -25,36 +25,36 @@ class InfobotYandexCloudLogger {
 
     generateToken() {
         return new Promise((resolve, reject) => {
-            if (!(self.token && self.tokenExpire && self.tokenExpire < Math.floor(new Date() / 1000))) {
+            if (!(this.token && this.tokenExpire && this.tokenExpire < Math.floor(new Date() / 1000))) {
                 const expire = Math.floor(new Date() / 1000) + 60;
 
                 const payload = {
                     'aud': 'https://iam.api.cloud.yandex.net/iam/v1/tokens',
-                    'iss': self.serviceAccountID,
+                    'iss': this.serviceAccountID,
                     'iat': Math.floor(new Date() / 1000),
                     'exp': expire
                 };
 
-                const tokenJWT = jwt.sign(payload, self.keyData, {
+                const tokenJWT = jwt.sign(payload, this.keyData, {
                     algorithm: 'PS256',
-                    keyid: self.keyID
+                    keyid: this.keyID
                 });
 
                 request.post(
                     'https://iam.api.cloud.yandex.net/iam/v1/tokens',
                     {json: {jwt: tokenJWT}},
-                    function (error, response, body) {
+                    (error, response, body) => {
                         if (!error && parseInt(response.statusCode) === 200) {
-                            self.token = body.iamToken;
-                            self.tokenExpire = expire;
-                            resolve(self.token);
+                            this.token = body.iamToken;
+                            this.tokenExpire = expire;
+                            resolve(this.token);
                         } else {
                             reject(error);
                         }
                     }
                 );
             } else {
-                resolve(self.token);
+                resolve(this.token);
             }
         });
     }
