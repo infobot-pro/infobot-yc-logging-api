@@ -1,10 +1,10 @@
-# infobot-yc-logging
+# infobot-yc-logging-api
 Библиотека для записи логов в сервис [Yandex Cloud Logging](https://cloud.yandex.ru/docs/logging/)
 
 Установите пакет через npm:
 
 ```sh
-npm i infobot-yc-logging
+npm i infobot-yc-logging-api
 ```
 
 ## Пример использования
@@ -17,7 +17,7 @@ npm i infobot-yc-logging
 Информацию о получении данных сервисных аккаунтов вы найдёте в [документации](https://cloud.yandex.ru/docs/iam/operations/sa/create).
 
 ```js
-const LoggerAPI = require("infobot-yc-logging");
+const LoggerAPI = require("infobot-yc-logging-api");
 
 const YCLogger = new LoggerAPI(
     ID_СЕРВИСНОГО_АККАУНТА, 

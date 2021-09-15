@@ -1,5 +1,5 @@
 {
-  "name": "infobot-yc-logging",
+  "name": "infobot-yc-logging-api",
   "version": "1.0.0",
   "description": "Library for integration with Yandex Cloud Logging",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infobot-pro/infobot-yc-logging.git"
+    "url": "git+https://github.com/infobot-pro/infobot-yc-logging-api.git"
   },
   "author": {
     "name": "INFOBOT LLC"
   },
   "bugs": {
-    "url": "https://github.com/infobot-pro/infobot-yc-logging/issues"
+    "url": "https://github.com/infobot-pro/infobot-yc-logging-api/issues"
   },
   "contributors": [
     {
