@@ -120,3 +120,4 @@ dist
 test/
 test.js
 yandex.pem
+package-lock.json
